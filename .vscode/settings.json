@@ -1,0 +1,17 @@
+{
+  "eslint.alwaysShowStatus": true,
+  "eslint.run": "onType",
+  "eslint.options": {
+    "extensions": [".js",".jsx",".tsx"]
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  // 控制缩进
+  "prettier.useTabs": false, // 缩进不使用tab，使用空格 
+  "prettier.tabWidth": 2, // 缩进字节数
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  }
+}
