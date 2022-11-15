@@ -1,30 +1,49 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
-    "overrides": [
-    ],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-        "eqeqeq": 2, //必须使用 === 和 !==
-        "no-empty-function": 2, //禁止空函数
-        "no-multi-spaces": 2, //禁止使用多个空格
-        "no-trailing-spaces": 2, //禁止禁用行尾空格
-        "space-infix-ops": 2, // 要求操作符周围有空格
-        "space-in-parens": 2, //强制在圆括号内使用一致的空格
-        "no-var":2, //要求使用 let 或 const 而不是 var,
-        "no-unused-vars": 1, //禁止出现未使用过的变量
-        "react/prop-types": 0 //防止在react组件定义中缺少props验证
-    }
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "settings": {},
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "eqeqeq": 2, //必须使用 === 和 !==
+    "no-empty-function": 1, //禁止空函数
+    "no-multi-spaces": 2, //禁止使用多个空格
+    "no-trailing-spaces": 2, //禁止禁用行尾空格
+    "space-infix-ops": 2, // 要求操作符周围有空格
+    "space-in-parens": 2, //强制在圆括号内使用一致的空格
+    "no-var": 2, //要求使用 let 或 const 而不是 var,
+    "no-unused-vars": 1, //禁止出现未使用过的变量
+    "react/prop-types": 0, //防止在react组件定义中缺少props验证
+    "no-console": 1, //禁用 console
+    "no-template-curly-in-string": 2, //禁止在常规字符串中出现模板字面量占位符语法
+    "array-callback-return": 1, //强制数组方法的回调函数中有 return 语句
+    "curly": 1, //强制所有控制语句使用一致的括号风格
+    "default-case": 2, //要求 switch 语句中有 default 分支
+    "dot-location": 1, //强制在点号之前和之后一致的换行
+    "dot-notation": 1, //强制尽可能地使用点号
+    "no-alert": 1, //禁用 alert、confirm 和 prompt
+    "no-fallthrough": 2, //禁止 case 语句落空
+    "no-floating-decimal": 1, //禁止数字字面量中使用前导和末尾小数点
+    "no-global-assign": 2, //禁止对原生对象或只读的全局对象进行赋值
+    "no-implicit-coercion": 2, //禁止使用短符号进行类型转换
+    // "no-magic-numbers": 1, //禁用魔术数字
+    "no-multi-str": 1, //禁止使用多行字符串
+    "no-new-wrappers": 2, //禁止对 String，Number 和 Boolean 使用 new 操作符
+    "no-return-assign": 2, //禁止在 return 语句中使用赋值语句
+    "no-self-compare": 2, //禁止自身比较
+    "no-useless-return": 1, //禁止多余的 return 语句
+    "require-unicode-regexp": 1, //强制在 RegExp 上使用 u 标志
+    "vars-on-top": 1, //要求所有的 var 声明出现在它们所在的作用域顶部
+    "yoda": 2, //要求或禁止 “Yoda” 条件
+    // "no-use-before-define": 1, //禁止在变量定义之前使用它们
+    "comma-dangle": 1 //要求或禁止末尾逗号
+  }
 }

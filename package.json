@@ -17,13 +17,21 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "eslint": "eslint ./src/*.js --fix",
+    "lint-fix": "eslint --fix --ext .js --ext .jsx src"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "no-unused-vars": "off",
+      "eqeqeq": "off",
+      "array-callback-return": "off",
+      "jsx-a11y/alt-text": "off"
+    }
   },
   "browserslist": {
     "production": [
@@ -39,6 +47,7 @@
   },
   "devDependencies": {
     "eslint": "^8.27.0",
-    "eslint-plugin-react": "^7.31.10"
+    "eslint-plugin-react": "^7.31.10",
+    "pre-commit": "^1.2.2"
   }
 }
